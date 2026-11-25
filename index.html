@@ -2,16 +2,26 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>日文筆記</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日文學習筆記站</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+    h1 { text-align: center; color: #333; }
+    .menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
+    .card { display: block; padding: 20px; background: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; text-align: center; text-decoration: none; color: #333; font-size: 1.2em; transition: 0.3s; }
+    .card:hover { background: #e9ecef; transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+  </style>
 </head>
 <body>
-  <h1>日文日常用語・俚語・冷笑話筆記</h1>
-  <ul>
-    <li><a href="./日常用語.md">日常用語</a></li>
-    <li><a href="./俚語.md">俚語</a></li>
-    <li><a href="./冷笑話.md">冷笑話</a></li>
-    <li><a href="./慣用語.md">慣用語</a></li>
-    <li><a href="./粗俗語言.md">粗俗語言（內含敏感詞彙）</a></li>
-  </ul>
+  <h1>日文日常・特殊用語筆記</h1>
+  <p style="text-align: center; color: #666;">內容持續更新中</p>
+
+  <div class="menu">
+    <a href="./daily/" class="card">📖 日常用語</a>
+    <a href="./slang/" class="card">🔥 俚語</a>
+    <a href="./joke/" class="card">❄️ 冷笑話</a>
+    <a href="./idiom/" class="card">🍵 慣用語</a>
+    <a href="./vulgar/" class="card" style="color: #b00020;">⚠️ 粗俗語言</a>
+  </div>
 </body>
 </html>
