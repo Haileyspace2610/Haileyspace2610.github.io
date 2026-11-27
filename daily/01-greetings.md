@@ -3,7 +3,7 @@
 <div class="card">
   <!-- 左側：文字內容 -->
   <div class="card-content">
-    <div class="card-title">💬 1. お早うございます (おはようございます)</div>
+    <div class="card-title">💬 1. お早うございます</div>
     <div class="card-hiragana">おはようございます</div>
     <div class="card-romaji">ohayou gozaimasu</div>
     <div class="card-line"><strong>中文意思</strong>：早安</div>
