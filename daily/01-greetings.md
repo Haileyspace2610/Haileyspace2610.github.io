@@ -12,7 +12,7 @@
 
   <!-- 右側：圖片框（高度與文字區塊等高，尺寸固定不變） -->
   <div class="card-image">
-    <img src="../images/ohayou.jpg" alt="おはよう情境圖">
+    <img src="../images/ohayou.jpeg" alt="おはよう情境圖">
   </div>
 </div>
 
