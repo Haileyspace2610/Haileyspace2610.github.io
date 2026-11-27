@@ -1,16 +1,104 @@
 # 1. 基本禮貌・見人講人話 🙇‍♂️
 
-<div style="background-color: #f9f9f9; border-left: 5px solid #4CAF50; padding: 15px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+<div class="card">
+  <!-- 左側：文字內容 -->
+  <div class="card-content">
+    <div class="card-title">💬 1. お早うございます (おはようございます)</div>
+    <div class="card-hiragana">おはようございます</div>
+    <div class="card-romaji">ohayou gozaimasu</div>
+    <div class="card-line"><strong>中文意思</strong>：早安</div>
+    <div class="card-line"><strong>使用場合</strong>：早上見面時的禮貌問候（對平輩或晚輩可省略為「おはよう」）。</div>
+  </div>
 
-### 💬 1. お早うございます (おはようございます)
-
-**中文意思**：早安<br>
-**使用場合**：早上見面時的禮貌問候（對平輩或晚輩可省略為「おはよう」）。
-
-<!-- 如需插入圖片，請刪除下面這行的前後符號並修改檔名 -->
-<!-- <img src="../images/ohayou.jpg" alt="おはよう情境圖" style="max-width: 100%; border-radius: 5px; margin-top: 15px;"> -->
-
+  <!-- 右側：圖片框（高度與文字區塊等高，尺寸固定不變） -->
+  <div class="card-image">
+    <img src="../images/ohayou.jpg" alt="おはよう情境圖">
+  </div>
 </div>
+
+<style>
+  /* ===== 卡片外框 ===== */
+  .card {
+    display: flex;
+    align-items: stretch;          /* 讓圖片框高度 = 文字區塊高度 */
+    gap: 15px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans JP",
+                 "Microsoft JhengHei", "PingFang TC", sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  /* ===== 左側文字區 ===== */
+  .card-content {
+    flex: 1 1 auto;
+    min-width: 0;                  /* 避免長句撐破卡片 */
+  }
+
+  /* 第 1 行：標題加粗 */
+  .card-title {
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+  }
+
+  /* 第 2 行：平假名，普通字體（基準 12pt） */
+  .card-hiragana {
+    font-weight: 400;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* 第 3 行：羅馬音，普通字體，比平假名細 2pt（12pt - 2pt = 10pt） */
+  .card-romaji {
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+  /* 第 4、5 行：標籤加粗、內容普通 */
+  .card-line {
+    margin-top: 4px;
+  }
+  .card-line strong {
+    font-weight: 700;
+  }
+
+  /* ===== 右側圖片框 ===== */
+  .card-image {
+    flex: 0 0 auto;
+    width: 160px;                  /* 圖框寬度固定，不隨內容改變 */
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #eee;
+    /* 高度由 align-items: stretch 撐滿，即等於文字高度 */
+  }
+
+  /* 圖片本身按比例縮放，填滿固定大小的圖框 */
+  .card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;             /* 等比縮放裁切，不變形 */
+    object-position: center;
+  }
+
+  /* ===== 小螢幕微調：圖框變窄但不變形 ===== */
+  @media (max-width: 480px) {
+    .card {
+      gap: 10px;
+      padding: 12px;
+    }
+    .card-image {
+      width: 100px;
+    }
+  }
+</style>
 
 <div style="background-color: #f9f9f9; border-left: 5px solid #4CAF50; padding: 15px; margin-bottom: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
 
